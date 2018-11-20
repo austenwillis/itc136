@@ -10,10 +10,11 @@ echo -en "This is a snapshot of yor current system:
         
         \e[35m  Free Memory: $memfree
         
-        \e[95m Logged in Users: $users
-        
+       \e[31m Logged in Users: $users
+\e[46m        
 Open Internet Connections:
 $connections
+\e[49m
 "
 
 
