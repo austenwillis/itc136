@@ -19,6 +19,7 @@ $connections
 
 
 echo "
-color info:
-
+\e[34m color info:
+https://misc.flogisoft.com/bash/tip_colors_and_formatting
+http://wiki.bash-hackers.org/scripting/style
 "
