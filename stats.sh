@@ -4,13 +4,13 @@ memfree=$(free -mh | grep Mem: | awk ' {print  $7}')
 connections=$( netstat | grep tcp )
 users=$( who )
 
-echo "This is asnapshot of yor current system:
+echo -en "This is a snapshot of yor current system:
 
-        Disk Used: $diskused
+       \e[32m  Disk Used: $diskused
         
-        Free Memory: $memfree
+        \e[35m  Free Memory: $memfree
         
-        Logged in Users: $users
+        \e[95m Logged in Users: $users
         
 Open Internet Connections:
 $connections
