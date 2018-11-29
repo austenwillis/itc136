@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Stats
+Comment=Stats
+Exec=/home/austenwillis/itc136/itc136/stats.sh %u
+Icon=/home/austenwillis/Documents/Desktop/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
