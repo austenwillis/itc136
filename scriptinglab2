@@ -2,6 +2,7 @@
 
 echo "Enter username:"
 read varname
+
 echo  hello $varname
 echo "Enter e-mail:"
 read varemail
@@ -9,10 +10,11 @@ echo  the email is $varemail
 echo "enter name of repository"
 read varrepository
 git clone https://github.com/$varname/$varrepository
-git config --global user.name $varname
-echo username:
-git config --global user.name 
-git config --global user.email $varemail
-echo e-mail:
-git config --global user.email
+cd $varrepository/
+
+git config --local user.name $varname
+git config --local user.email $varemail
+
 git status
+
+echo "Set up complete."
